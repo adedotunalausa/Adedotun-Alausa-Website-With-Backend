@@ -1,0 +1,65 @@
+%butn {
+  border-radius: 40px;
+  padding: 0.7rem 1rem;
+  margin: 0.75rem 0.8rem;
+  text-align: center;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background-image: linear-gradient(150deg,#3A61E2,#3AB29E);
+  box-shadow: 0 2px 8px 0 rgba(0,34,255,.08), 0 2px 8px 0 rgba(0,11,80,.12);
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(120deg,#3AB29E, #3A61E2);
+  }
+}
+
+.butn {
+  @extend %butn;
+  border-style: none;
+}
+
+.butn-post {
+  display: block;
+  margin-left: 0;
+}
+
+.butn-tech {
+  @extend %butn;
+  padding: .6rem 1rem;
+  cursor: text;
+}
+
+.contact {
+  border-radius: 40px;
+  padding: .6rem 1.1rem;
+  text-align: center;
+  color: #5B6E80;
+  font-weight: 400;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3AB29E;
+  cursor: pointer;
+}
+
+.contact:hover {
+  color: #FFF;
+  background-image: linear-gradient(120deg,#3AB29E, #3A61E2);
+  box-shadow: 0 2px 8px 0 rgba(0,34,255,.08), 0 2px 8px 0 rgba(0,11,80,.12);
+}
+
+@media screen and (min-width: 768px) {
+  %butn {
+    padding: 1rem 1.2rem;
+    margin: 0.75rem 0;
+    font-size: 1rem;
+  }
+
+  .contact {
+    padding: 0.7rem .08rem;
+    margin: 0.75rem 0 0.75rem 3rem;
+  }
+}

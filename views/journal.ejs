@@ -1,0 +1,27 @@
+
+<%- include("partials/header"); -%>
+
+<div class="journal-page-content-wrapper">
+
+  <div class="startingContent-wrapper">
+    <h1 class="journal-heading fade-in">The Epiphany Journal</h1>
+
+    <h3 class="fade-in" style="margin-bottom: 3rem">Tech, Education & Lifestyle</h3>
+
+  </div>
+
+  <% postGlobal.forEach((post) => { %>
+    <div class="post-container">
+      <h1 class="fade-in"><%= post.title %></h1>
+      <p class="post-date">March 22, 2020</p>
+      <p class="post-highlight fade-in">
+        <%= post.content.substring(0, 100) + " ..." %>
+        <a class="read-more" href="/journal/posts/<%= post._id %>">Read More</a>
+      </p>
+    </div>
+<% }); %>
+
+</div>
+
+
+<%- include("partials/footer"); -%>
