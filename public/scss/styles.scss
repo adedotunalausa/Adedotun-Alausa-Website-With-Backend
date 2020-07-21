@@ -23,7 +23,7 @@ body{
   margin-bottom: 20rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: #222831;
 }
 
@@ -178,10 +178,6 @@ nav {
         margin-bottom: 0;
       }
     }
-
-    .contact:hover{
-      text-decoration: none;
-    }
   }
 
   .menu-items.show {
@@ -281,6 +277,81 @@ nav {
 }
 
 // Second Section
+.second-section {
+  background: hsl(221, 72%, 98%);
+  text-align: center;
+  padding: 4.5rem 1.5rem 3.5rem 1.5rem;
+
+  .projects-heading {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    p{
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .projects-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .card {
+      position: relative;
+      z-index: -5;
+      background: #FFF;
+      width: 95%;
+      height: 100%;
+      margin: 2rem auto;
+      padding-top: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 rgba(0,34,255,.08), 0 2px 4px 0 rgba(0,11,80,.12);
+    }
+
+    .card-dark {
+      background: #1C1C1C;
+    }
+
+    .card-heading {
+      h4 {
+        text-align: left;
+        margin: 2rem 0 1.2rem 2rem;
+      }
+
+      h3 {
+        color: #E91E63;
+        font-size: 2rem;
+        text-align: left;
+        padding-right:1rem;
+        margin-left: 2rem;
+        line-height: 3rem;
+      }
+    }
+
+    .card-img1 {
+      margin: 6rem 0 2rem 1.2rem;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 rgba(0,34,255,.08), 0 2px 4px 0 rgba(0,11,80,.12);
+    }
+
+    .card-img2 {
+      position: absolute;
+      margin-bottom: 6rem;
+      margin-left: 1rem;
+      width: 10rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 rgba(0,34,255,.08), 0 2px 4px 0 rgba(0,11,80,.12);
+      z-index: 1;
+    }
+  }
+}
+
+// Third Section
 #abilities {
   padding: 4.5rem 1.5rem 3.5rem 1.5rem;
   text-align: center;
@@ -288,7 +359,6 @@ nav {
   h2 {
     margin-bottom: 4rem;
     font-size: 2rem;
-    color: #222831;
   }
 
   .second-section-container {
@@ -318,7 +388,7 @@ nav {
 .fourth-section {
   padding: 5rem 1rem 1.5rem;
   text-align: center;
-  background-color: rgb(60, 105, 220, 0.1);
+  background-color: hsl(221, 72%, 98%);
 
   .fourth-section-container {
     margin-bottom: 5rem;
@@ -667,6 +737,80 @@ nav {
   }
 
   // Second Section
+  .second-section {
+    text-align: center;
+    padding: 4.5rem 1.5rem 3.5rem 1.5rem;
+
+    .projects-heading {
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+      }
+
+      p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    .projects-container {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+      .card {
+        position: relative;
+        z-index: -5;
+        background: #FFF;
+        width: 95%;
+        height: 100%;
+        margin: 2rem auto;
+        padding-top: 0.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(0,34,255,.08), 0 2px 4px 0 rgba(0,11,80,.12);
+      }
+
+      .card-dark {
+        background: #1C1C1C;
+      }
+
+      .card-heading {
+        h4 {
+          text-align: left;
+          margin: 2rem 0 1.2rem 2rem;
+        }
+
+        h3 {
+          color: #E91E63;
+          font-size: 2rem;
+          text-align: left;
+          padding-right:1rem;
+          margin-left: 2rem;
+          line-height: 3rem;
+        }
+      }
+
+      .card-img1 {
+        margin: 6rem 0 2rem 1.2rem;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(0,34,255,.08), 0 2px 4px 0 rgba(0,11,80,.12);
+      }
+
+      .card-img2 {
+        position: absolute;
+        margin-bottom: 6rem;
+        margin-left: 1rem;
+        width: 10rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(0,34,255,.08), 0 2px 4px 0 rgba(0,11,80,.12);
+        z-index: 1;
+      }
+    }
+  }
+
+  // Third Section
   #abilities {
     padding: 4rem 0;
 
@@ -767,6 +911,23 @@ nav {
 
 .post-highlight {
   line-height: 1.5rem;
+
+  a {
+    color: blue;
+  }
+
+  a:active {
+      color: green;
+  }
+
+  a:hover {
+      color: red;
+  }
+
+  a[tabindex]:focus {
+    color: blue;
+    outline: none;
+  }
 }
 
 .post-body {
@@ -830,6 +991,81 @@ nav {
     }
   }
 
+  // Second Section
+  .second-section {
+    text-align: center;
+    padding: 4.5rem 1.5rem 3.5rem 1.5rem;
+
+    .projects-heading {
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+      }
+
+      p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    .projects-container {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .card {
+        position: relative;
+        z-index: -5;
+        background: #FFF;
+        width: 95%;
+        height: 100%;
+        margin: 2rem auto;
+        padding-top: 0.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(0,34,255,.08), 0 2px 4px 0 rgba(0,11,80,.12);
+      }
+
+      .card-dark {
+        background: #1C1C1C;
+      }
+
+      .card-heading {
+        h4 {
+          text-align: left;
+          margin: 2rem 0 1.2rem 2rem;
+        }
+
+        h3 {
+          color: #E91E63;
+          font-size: 2rem;
+          text-align: left;
+          padding-right:1rem;
+          margin-left: 2rem;
+          line-height: 3rem;
+        }
+      }
+
+      .card-img1 {
+        margin: 6rem 0 2rem 1.2rem;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(0,34,255,.08), 0 2px 4px 0 rgba(0,11,80,.12);
+      }
+
+      .card-img2 {
+        position: absolute;
+        margin-bottom: 6rem;
+        margin-left: 1rem;
+        width: 10rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(0,34,255,.08), 0 2px 4px 0 rgba(0,11,80,.12);
+        z-index: 1;
+      }
+    }
+  }
+
+// Third Section
   #abilities {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
@@ -849,6 +1085,7 @@ nav {
     padding-right: 4.5rem;
   }
 
+// Fifth Section
   #fifth-section {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
