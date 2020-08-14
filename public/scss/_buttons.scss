@@ -1,7 +1,7 @@
-%butn {
+.butn {
   border-radius: 40px;
   padding: 0.7rem 1rem;
-  margin: 0.75rem 0.8rem;
+  // margin: 0.75rem 0.8rem;
   text-align: center;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
@@ -10,15 +10,13 @@
   background-image: linear-gradient(150deg,#3A61E2,#3AB29E);
   box-shadow: 0 2px 8px 0 rgba(0,34,255,.08), 0 2px 8px 0 rgba(0,11,80,.12);
   cursor: pointer;
-
-  &:hover {
-    background-image: linear-gradient(120deg,#3AB29E, #3A61E2);
-  }
+  transition: all 0.2s ease-in-out 0s;
 }
 
-.butn {
-  @extend %butn;
-  border-style: none;
+.butn:hover, .contact:hover {
+  background-image: linear-gradient(120deg,#3AB29E, #3A61E2);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
 }
 
 .butn-post {
@@ -27,7 +25,6 @@
 }
 
 .butn-tech {
-  @extend %butn;
   padding: .6rem 1rem;
   cursor: text;
 }
@@ -43,16 +40,11 @@
   border-width: 1px;
   border-color: #3AB29E;
   cursor: pointer;
-}
-
-.contact:hover {
-  color: #FFF;
-  background-image: linear-gradient(120deg,#3AB29E, #3A61E2);
-  box-shadow: 0 2px 8px 0 rgba(0,34,255,.08), 0 2px 8px 0 rgba(0,11,80,.12);
+  transition: all 0.3s ease-in-out 0s;
 }
 
 @media screen and (min-width: 768px) {
-  %butn {
+  .butn {
     padding: 1rem 1.2rem;
     margin: 0.75rem 0;
     font-size: 1rem;
